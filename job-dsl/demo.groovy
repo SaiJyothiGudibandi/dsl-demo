@@ -1,6 +1,6 @@
 pipelineJob('DSL_Demo') {
 
-    def repo = 'https://github.com/Jouda-Hidri/demo.git'
+    def repo = 'https://github.com/SaiJyothiGudibandi/maven-repo.git'
    
     triggers {
         scm('*/15 * * * *')
