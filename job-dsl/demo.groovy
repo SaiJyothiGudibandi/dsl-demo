@@ -2,7 +2,8 @@ pipelineJob('DSL_Demo') {
 
     def repo = 'https://github.com/SaiJyothiGudibandi/sample-project-maven.git'
     parameters {
-        stringParam('var1', '$var1')
+        predefinedProp('GIT_COMMIT', '$GIT_COMMIT')
+        predefinedProp('ARTIFACT_BUILD_NUMBER', '$BUILD_NUMBER')
     }
    
     triggers {
